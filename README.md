@@ -1,5 +1,5 @@
 # Flexible Modeling of Nonstationary Extremal Dependence Using Spatially-Fused LASSO and Ridge Penalties
-Functions for modeling nonstationary extremal dependence using locally-statioanry max-stable processes with LASSO and ridge penalization.
+Functions for modeling nonstationary extremal dependence using locally-stationary max-stable processes with LASSO and ridge penalization.
 The provided code is in support of Shao, X., Hazra, A., Richards, J., and Huser, R. (2023+). Flexible modeling of non-stationary extremal dependence using spatially-fused LASSO and ridge penalties. <u><a href="https://arxiv.org/abs/2210.05792" download>ArXiv.</a></u>
 
 
