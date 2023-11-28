@@ -9,8 +9,9 @@ The two main R scripts are:
 
 <ol>
           <li> `Modeling.R` - Fits the extremal dependence with provided data </li>
-          <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables  </li>
+          <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
 </ol>
+which should be run sequentially. Running the code as is will perform model fitting and summary for a simulated data example. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the data used in the application (see below). Note that the former takes only a few minutes to compile, whilst the latter will take a few hours!
 
 Auxillary and utility functions are include in the R files:
 <ol>
@@ -23,22 +24,17 @@ Auxillary and utility functions are include in the R files:
  <li>  `Utils.R` - Various other utility functions.</li>
 </ol>
 
+Included in the repo are two Rdata files:
+<ol>
+ <li>  `NepalExtended.Rdata` - The gridded data of monthly maximum temperature dataset from Nepal and its surrounding Himalayan and sub-Himalayan regions used in the data application of the paper. This file includes the marginal parameter estiamtes (GEV parameters) derived using the Max-and-Smooth method: postman.mu (location), postman.sigma (scale), postman.xi (shape). </li>
+ <li>  `Simulated.Rdata` - Simulated data from `Simulate_data.R`, including the coordinate and true (dependence) parameter information. The true partition is partition P1 mentioned in the paper. </li>
+</ol>
 
+Some further remarks:
+<ul>
+<li>  The current program only works for gridded data, but an extension to general lattice data is available.</li>
+<li>  Nonstationarity is assumed for the input data.</li>
+<li>  Input data must be renormalized to unit Fréchet margins to fit the max-stable processes.</li>
+<li>  Some difficulties in range estimation may emerge.</li>
+</ul> 
 
-Rdata files:
-
-1. NepalExtended.Rdata: The gridded monthly maximum temperature dataset from Nepal and its surrounding Himalayan and sub-Himalayan regions used in data application. The file includes the parameter estimation results of margin structure estimation (GEV parameters) using the Max-and-Smooth method: postman.mu (location), postman.sigma (scale), postman.xi (shape).
-
-2. Simulated.Rdata: A simulated data with Simulate_data.R, including the coordinate and true (dependence) parameter information. The true partition is the partition P1 mentioned in the paper.
-
-Remarks:
-
-1. The current program only works for grid data, but an extension to general lattice data is available.
-2. Nonstationarity is assumed for the input data.
-3. Input data must be renormalized in unit Fréchet scale for the max-stable processes.
-4. Some difficulties in range estimation may emerge.
-
-How to Start:
-
-1. Input the dataset (simulation or extended Nepal data) by changing the variable "dat". Hyperparameters are given according to the chosen dataset.
-2. Compile Modeling.R for modeling and Summary.R for assessment with plots and tables, which are related to Figures 4-6 and Table 3 in the paper.
