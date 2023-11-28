@@ -1,18 +1,28 @@
-Here is a supplementary program and dataset for the manuscript "Flexible Modeling of Nonstationary Extremal Dependence Using Spatially-Fused LASSO and Ridge Penalties".
+# Flexible Modeling of Nonstationary Extremal Dependence Using Spatially-Fused LASSO and Ridge Penalties
+Functions for modeling nonstationary extremal dependence using locally-statioanry max-stable processes with LASSO and ridge penalization.
+The provided code is in support of the paper:
+<ul> 
+          <li> Shao, X., Hazra, A., Richards, J., and Huser, R. (2023+). Flexible modeling of non-stationary extremal dependence using spatially-fused LASSO and ridge penalties. <u><a href="https://arxiv.org/abs/2210.05792" download>ArXiv</a></u> </li>
+</ul>
 
+The two main R scripts are:
 
-R files:
+<ol>
+          <li> `Modeling.R` - Fits the extremal dependence with provided data </li>
+          <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables  </li>
+</ol>
 
-1. (*)Modeling.R: Modeling extremal dependence with given data;
-2. (*)Summary.R: Summary of the fitted model with related plots and tables;
-3. Simulate_data.R: A simple simulation of max-stable processes with nonstationary extremal dependence;
-4. Algorithm1.R: Function for the Algorithm 1 described in the paper;
-5. Merge_subr.R: Function for the subregion merging process;
-6. Lambda_tuning.R: Function for the lambda-tuning;
-7. Fit.R: Some fitting function for convenience, based on the optim;
-8. Objectives.R: Pairwise likelihood function for the max-stable processes (and also for the inverted MSPs);
-9. Utils.R: Some auxiliary functions.
-(*): main scripts
+Auxillary and utility functions are include in the R files:
+<ol>
+ <li>  `Simulate_data.R` - A simple simulation of max-stable processes with nonstationary extremal dependence;</li>
+ <li>  `Algorithm1.R` - Function for Algorithm 1 described in the paper;</li>
+ <li>  `Merge_subr.R` - Function for the subregion merging process described in the paper;</li>
+ <li>  `Lambda_tuning.R` - Function for the lambda-tuning described in the paper;</li>
+ <li> `Fit.R` - Some fitting function for convenience, using r-optim;</li>
+ <li>  `Objectives.R` - Pairwise likelihood functions for the Brown-Resnick process (and inverted counterpart);</li>
+ <li>  `Utils.R` - Various other utility functions.</li>
+</ol>
+
 
 
 Rdata files:
