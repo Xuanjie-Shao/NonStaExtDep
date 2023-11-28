@@ -6,7 +6,7 @@ The two main R scripts are:
 
 <ol>
           <li> _Modeling.R_ - Fits the extremal dependence model with a provided dataset. Can be run for either the simulation study or the application. </li>
-          <li> Summary.R - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
+          <li> _Summary.R_ - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
 </ol>
 which should be run sequentially. Running the code as is will perform model fitting and summary for a simulated data example. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the data used in the application (see below). Note that the former takes only a few minutes to compile, whilst the latter will take a few hours!
 
