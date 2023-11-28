@@ -5,14 +5,14 @@ The provided code is in support of Shao, X., Hazra, A., Richards, J., and Huser,
 The two main R scripts are:
 
 <ol>
-          <li> _Modeling.R_ - Fits the extremal dependence model with a provided dataset. Can be run for either the simulation study or the application. </li>
-          <li> _Summary.R_ - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
+          <li> `Modeling.R` - Fits the extremal dependence model with a provided dataset. Can be run for either the simulation study or the application. </li>
+          <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
 </ol>
 which should be run sequentially. Running the code as is will perform model fitting and summary for a simulated data example. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the data used in the application (see below). Note that the former takes only a few minutes to compile, whilst the latter will take a few hours!
 
-Auxillary and utility functions are include in the R files:
+Auxillary scripts include:
 <ol>
- <li>  `Simulate_data.R` - A simple simulation of max-stable processes with nonstationary extremal dependence;</li>
+ <li>  `Simulate_data.R` - A simple simulation of Brown-Resnick processes with nonstationary extremal dependence;</li>
  <li>  `Algorithm1.R` - Function for Algorithm 1 described in the paper;</li>
  <li>  `Merge_subr.R` - Function for the subregion merging process described in the paper;</li>
  <li>  `Lambda_tuning.R` - Function for the lambda-tuning described in the paper;</li>
