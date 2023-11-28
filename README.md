@@ -1,15 +1,12 @@
 # Flexible Modeling of Nonstationary Extremal Dependence Using Spatially-Fused LASSO and Ridge Penalties
 Functions for modeling nonstationary extremal dependence using locally-statioanry max-stable processes with LASSO and ridge penalization.
-The provided code is in support of the paper:
-<ul> 
-          <li> Shao, X., Hazra, A., Richards, J., and Huser, R. (2023+). Flexible modeling of non-stationary extremal dependence using spatially-fused LASSO and ridge penalties. <u><a href="https://arxiv.org/abs/2210.05792" download>ArXiv</a></u> </li>
-</ul>
+The provided code is in support of Shao, X., Hazra, A., Richards, J., and Huser, R. (2023+). Flexible modeling of non-stationary extremal dependence using spatially-fused LASSO and ridge penalties. <u><a href="https://arxiv.org/abs/2210.05792" download>ArXiv.</a></u>
 
 The two main R scripts are:
 
 <ol>
-          <li> `Modeling.R` - Fits the extremal dependence with provided data </li>
-          <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
+          <li> `Modeling.R` - Fits the extremal dependence model with a provided dataset. Can be run for either the simulation study or the application. </li>
+          <li> Summary.R - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
 </ol>
 which should be run sequentially. Running the code as is will perform model fitting and summary for a simulated data example. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the data used in the application (see below). Note that the former takes only a few minutes to compile, whilst the latter will take a few hours!
 
