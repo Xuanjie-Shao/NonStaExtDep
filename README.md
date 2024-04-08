@@ -12,6 +12,7 @@ The two main R scripts are:
 They should be run sequentially. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the simulated data or the data used in the application. Note that the former takes only a few minutes to compile, whilst the latter will take a few hours! Compiling Summary.R with `dat = "NepalExtended"` will provide Figures 4-6 and Table 3 in the paper.
 
 
+
 Auxillary scripts include:
 <ol>
  <li>  `Simulate_data.R` - A simple simulation of Brown-Resnick processes with nonstationary extremal dependence;</li>
