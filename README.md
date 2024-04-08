@@ -10,7 +10,6 @@ The two main R scripts are:
           <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables. See Figures 4-6 and Table 3 in the paper.  </li>
 </ol>
 They should be run sequentially. By changing the code `dat = "Simulated"` to `dat = "NepalExtended"` at the top of each script will run model fitting and summary for the simulated data or the data used in the application. Note that the former takes only a few minutes to compile, whilst the latter will take a few hours! Compiling Summary.R with `dat = "NepalExtended"` will provide Figures 4-6 and Table 3 in the paper.
-</ol>
 
 
 Auxillary scripts include:
