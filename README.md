@@ -9,7 +9,7 @@ The two main R scripts are:
           <li> `Modeling.R` - Fits the extremal dependence model with a provided dataset. Can be run for either the simulation study or the application. </li>
           <li> `Summary.R` - Provides a summary of the fitted model with related plots and tables.  </li>
 </ol>
-They should be run sequentially. By changing the code to `dat = "Simulated"` or `dat = "NepalExtended"` at the top of each script will run model fitting and summary for a simple simulated data on true partition P1 (square partition) or the Nepal temperature data used in the application, respectively. Note that the former takes only a few minutes to compile, whilst the latter will take a few hours! Compiling Summary.R with `dat = "NepalExtended"` will provide Figures 4-6 and Table 3 in the paper.
+They should be run sequentially. By changing the code to `dat = "Simulated"` or `dat = "NepalExtended"` at the top of each script will run model fitting and summary for a simple simulated data on the true partition P1 (square partition) or the Nepal temperature data used in the application, respectively. Note that the former takes only a few minutes to compile, whilst the latter will take a few hours! Compiling Summary.R with `dat = "NepalExtended"` will provide Figures 4-6 and Table 3 in the paper.
 
 
 Auxillary scripts include:
