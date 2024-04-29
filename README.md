@@ -17,7 +17,7 @@ Auxillary scripts include:
  <li>  `Simulate_data.R` - A simple simulation of Brown-Resnick processes with nonstationary extremal dependence;</li>
  <li>  `Algorithm1.R` - Function for Algorithm 1 described in the paper;</li>
  <li>  `Merge_subr.R` - Function for the subregion merging process described in the paper;</li>
- <li>  `Lambda_tuning.R` - Function for the lambda-tuning described in the paper;</li>
+ <li>  `Lambda_tuning.R` - Function for the $\mathbf{\lambda}$-tuning described in the paper;</li>
  <li> `Fit.R` - Some fitting function for convenience, using r-optim;</li>
  <li>  `Objectives.R` - Pairwise likelihood functions for the Brown-Resnick process (and inverted counterpart);</li>
  <li>  `Utils.R` - Various other utility functions.</li>
